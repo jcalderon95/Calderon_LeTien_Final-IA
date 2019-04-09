@@ -113,22 +113,29 @@ html {
 .hero
 {
 	background: url(../images/hero1.jpg) no-repeat center;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
 }
 
 .welcomeCon
 {
 	margin: 0 auto;
 	max-width: 780px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-top: 90px;
+	margin-bottom: 90px;
 }
 
-.welcome
+
+.welcomeCon h2
 {
 	font-size: 25px;
 	font-family: 'Montserrat' ,Helvetica, Arial, sans-serif;
 	color: #ededed;
 	text-align: center;
 	font-weight: bold;
-	padding-top: 90px;
 }
 
 .welcomeWaterline
@@ -164,7 +171,6 @@ html {
 	width: 200px;
 	display: block;
 	margin: 0 auto;
-	padding-bottom: 90px;
 }
 
 /*============= ABOUT SECTION =========*/
@@ -225,6 +231,7 @@ html {
 	flex-direction: column;
 	max-width: 570px;
 	margin: 0 auto;
+	margin-top: 80px;
 }
 
 .greenButton
@@ -262,6 +269,63 @@ html {
 }
 /*============= END ABOUT =============*/
 
+/*============= MEMBERSHIP SECTION ============*/
+
+#membership
+{
+	background-color: #a6a6a6;
+	margin-bottom: 90px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 1px;
+	padding-top: 1px;
+}
+
+#membershipText
+{
+	margin: 0 auto;
+	max-width: 720px;
+}
+
+#membershipText h2
+{
+	font-size:30px;
+	font-family: Apple Symbols, Arial;
+	color: #fff;
+	margin-top:50px;
+	margin-bottom:30px;
+	text-align: center;
+}
+
+#membershipText h3
+{
+	font-size:20px;
+	font-family: Apple Symbols, Arial;
+	color: #fff;
+	margin-bottom:40px;
+	text-align: center;
+}
+
+#membershipText p
+{
+	font-size:18px;
+	font-family: Apple Symbols, Arial;
+	color: #fff;
+	text-align: center;
+}
+
+#membership img
+{
+	max-width:270px;
+	margin: 0 auto;
+	width: 115px;
+	display: block;
+	margin: 0 auto;
+	margin-top: 35px;
+	margin-bottom: 50px;
+}
+
+/*============= END MEMBERSHIP SECTION =========*/
 
 /*========== Media Queries ===========*/
 
