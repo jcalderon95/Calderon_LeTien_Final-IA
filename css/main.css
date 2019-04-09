@@ -177,6 +177,7 @@ html {
 
 .aboutSection
 {
+	margin: 0 auto;
 	max-width: 1000px;
 	margin-top: 70px;
 	margin-bottom: 70px;
