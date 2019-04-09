@@ -328,6 +328,119 @@ html {
 
 /*============= END MEMBERSHIP SECTION =========*/
 
+/* ============= PROJECTS SECTION =============*/
+.projectsCon
+{
+	display: flex;
+	flex-direction: column;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.projectsHeader
+{
+	max-width: 1010px;
+	margin: 0 auto;
+}
+
+.projectsCon h2
+{
+	font-size: 25px;
+	font-family: 'Montserrat',Andale Mono, Helvetica, sans-serif;
+	color: #00a651;
+	text-align: center;
+	font-weight: bold;
+	/*margin-top: 130px;*/
+	margin-bottom: 20px;
+}
+
+.waterlineProjects
+{	
+	
+	margin: 0 auto;
+	display: block; 
+	margin-bottom: 60px;
+	max-width: 340px;
+	width: 165px;
+}
+
+.projectsInfo
+{
+	font-size: 20px;
+	font-family: Apple Symbols, Arial, sans-serif;
+	color: #717172;
+	line-height: 30px;
+	text-align: center;
+	margin-bottom: 100px;
+}
+
+.projects
+{
+	/*display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;*/
+	margin: 0 auto;
+	max-width: 1320px;
+}
+
+.projectsDesc
+{
+	max-width: 375px;
+	margin-bottom: 120px;
+}
+
+.projectsDesc img
+{
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	/*height: 275px;*/
+	max-width: 275px;
+	max-height: 275px;
+	width: 230px;
+	height: 230px;
+}
+
+.projectsDesc h3
+{
+	/*height: 60px;*/
+	font-family: Apple Symbols, Arial, sans-serif;
+	font-size: 25px;
+	color: #717172;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.projectsDesc a
+{
+	display: block;
+	margin: 0 auto;
+	width: 160px;
+	color: #03552a;
+	text-align: center;
+	font-family: Apple Symbols, Arial, sans-serif;
+	font-size: 25px;
+	text-decoration: none;
+	background-color: #e1eae6;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	border-top: solid 1px #b1d1c1;
+}
+
+.projectsDesc a:hover
+{
+	background: #e1eae6; 
+	background: -moz-linear-gradient(top, #e1eae6 0%, #c0d3c9 50%, #e1eae6 100%); 
+	background: -webkit-linear-gradient(top, #e1eae6 0%,#c0d3c9 50%,#e1eae6 100%); 
+	background: linear-gradient(to bottom, #e1eae6 0%,#c0d3c9 50%,#e1eae6 100%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e1eae6', endColorstr='#e1eae6',GradientType=0 );
+	color:#006633
+}
+
+/* ============= END PROJECTS SECTION =============*/
+
 /*========== Media Queries ===========*/
 
 
