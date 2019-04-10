@@ -1,0 +1,597 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.hidden
+{
+	display: none;
+}
+
+img, embed, object, video 
+{
+  max-width: 100%; 
+}
+
+html {
+  box-sizing: border-box; 
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+ .container {
+  margin: 0px auto;
+  padding: 0px 15px 0 15px;
+  max-width: 1200px; 
+}
+
+
+/*========= Nav ==============*/
+
+#mainHeader
+{
+	background: #2e7551;
+	background: -moz-linear-gradient(top, #2e7551 1%, #35845b 50%, #2e7551 100%); 
+	background: -webkit-linear-gradient(top, #2e7551 1%,#35845b 50%,#2e7551 100%); 
+	background: linear-gradient(to bottom, #2e7551 1%,#35845b 50%,#2e7551 100%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2e7551', endColorstr='#2e7551',GradientType=0 );
+	padding-bottom: 15px;
+}
+
+#mainNav
+{
+  display: flex;
+  flex-direction: column;
+}
+
+
+#mainNav button
+{
+  background: url(../images/burger.svg) center no-repeat;
+  width: 30px;
+  height: 30px;
+  border: 0px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  transition: all 400ms ease;
+  margin-left: auto;
+}
+
+#mainNav button.expanded
+{
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+
+#mainNav ul li a
+{
+  display: block;
+  padding: 10px 0 10px 0; /*trbl*/
+  color: #f8f8f8;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Montserrat' ,Helvetica, Arial, sans-serif;
+  transition: all .3s ease-in;
+}
+
+
+#mainNav li:last-child
+{
+  margin-bottom: 10px;
+}
+
+#mainNav ul li a:hover
+{
+	color: #00c15e;
+}
+
+#burgerCon
+{
+  margin-top: 20px;
+  display: none;
+  margin-bottom: 20px;
+}
+
+
+#burgerCon.slideToggle
+{
+  display: block;
+}
+
+#logo
+{
+	display: block;
+	margin: 0 auto;
+	max-width: 100px;
+}
+
+/*============== Welcome Section ==================*/
+
+.hero
+{
+	background: url(../images/hero1.jpg) no-repeat center;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+}
+
+.welcomeCon
+{
+	margin: 0 auto;
+	max-width: 780px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-top: 90px;
+	margin-bottom: 90px;
+}
+
+
+.welcomeCon h2
+{
+	font-size: 25px;
+	font-family: 'Montserrat' ,Helvetica, Arial, sans-serif;
+	color: #ededed;
+	text-align: center;
+	font-weight: bold;
+}
+
+.welcomeWaterline
+{
+	width: 200px;
+	display: block;
+	margin: 0 auto;
+	margin-top: 30px;
+	margin-bottom: 75px;
+}
+
+.introText
+{
+	font-size: 18px;
+	font-family: 'Montserrat' ,Helvetica, Arial, sans-serif;
+	color: #ededed;
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 30px;
+}
+
+.welcomeCon p
+{
+	font-size: 18px;
+	font-family: Apple Symbols, Arial, sans-serif;
+	color: #ededed;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.welcomeWaterline2
+{
+	width: 200px;
+	display: block;
+	margin: 0 auto;
+}
+
+/*============= ABOUT SECTION =========*/
+
+.aboutSection
+{
+	margin: 0 auto;
+	max-width: 1000px;
+	margin-top: 70px;
+	margin-bottom: 70px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.aboutSection h2
+{
+	font-size: 25px;
+	font-family: 'Montserrat' ,Helvetica, Arial, sans-serif;
+	color: #00A651;
+	text-align: center;
+	font-weight: bold;	
+	margin-bottom: 20px;
+}
+
+.waterlineAbout
+{
+	width: 175px;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 50px;
+}
+
+.aboutContent
+{
+	display: flex;
+	flex-direction: row;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.aboutIcon
+{
+	max-width: 80px;
+	width: 40px;
+	height: 40px;
+	margin-right: 30px;
+}
+
+.aboutContent p
+{
+	font-size:18px;
+	font-family: Apple Symbols, Arial, sans-serif;
+	color: #006633;
+}
+
+#aboutButton
+{
+	display:flex;
+	flex-direction: column;
+	max-width: 570px;
+	margin: 0 auto;
+	margin-top: 80px;
+}
+
+.greenButton
+{
+	width: 160px;
+	margin: 0 auto;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-bottom: 15px;
+	padding-top: 15px;
+	text-align: center;
+	background-color: #2e7551;
+	font-size: 25px;
+	color:#fff;
+	text-decoration: none;
+	font-family: Apple Symbols, Arial;
+	margin-bottom: 35px;
+}
+
+.greyButton
+{
+	width: 160px;
+	margin: 0 auto;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	background-color: #e1eae6;
+	font-size:25px;
+	color:#006633;
+	text-decoration: none;
+	text-align: center;
+	font-family: Apple Symbols, Arial;
+	border-top: solid 1px #b1d1c1;
+}
+/*============= END ABOUT =============*/
+
+/*============= MEMBERSHIP SECTION ============*/
+
+#membership
+{
+	background-color: #a6a6a6;
+	margin-bottom: 90px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 1px;
+	padding-top: 1px;
+}
+
+#membershipText
+{
+	margin: 0 auto;
+	max-width: 720px;
+}
+
+#membershipText h2
+{
+	font-size:30px;
+	font-family: Apple Symbols, Arial;
+	color: #fff;
+	margin-top:50px;
+	margin-bottom:30px;
+	text-align: center;
+}
+
+#membershipText h3
+{
+	font-size:20px;
+	font-family: Apple Symbols, Arial;
+	color: #fff;
+	margin-bottom:40px;
+	text-align: center;
+}
+
+#membershipText p
+{
+	font-size:18px;
+	font-family: Apple Symbols, Arial;
+	color: #fff;
+	text-align: center;
+}
+
+#membership img
+{
+	max-width:270px;
+	margin: 0 auto;
+	width: 115px;
+	display: block;
+	margin: 0 auto;
+	margin-top: 35px;
+	margin-bottom: 50px;
+}
+
+/*============= END MEMBERSHIP SECTION =========*/
+
+/* ============= PROJECTS SECTION =============*/
+.projectsCon
+{
+	display: flex;
+	flex-direction: column;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.projectsHeader
+{
+	max-width: 1010px;
+	margin: 0 auto;
+}
+
+.projectsCon h2
+{
+	font-size: 25px;
+	font-family: 'Montserrat',Andale Mono, Helvetica, sans-serif;
+	color: #00a651;
+	text-align: center;
+	font-weight: bold;
+	/*margin-top: 130px;*/
+	margin-bottom: 20px;
+}
+
+.waterlineProjects
+{	
+	
+	margin: 0 auto;
+	display: block; 
+	margin-bottom: 60px;
+	max-width: 340px;
+	width: 165px;
+}
+
+.projectsInfo
+{
+	font-size: 20px;
+	font-family: Apple Symbols, Arial, sans-serif;
+	color: #717172;
+	line-height: 30px;
+	text-align: center;
+	margin-bottom: 100px;
+}
+
+.projects
+{
+	/*display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;*/
+	margin: 0 auto;
+	max-width: 1320px;
+}
+
+.projectsDesc
+{
+	max-width: 375px;
+	margin-bottom: 120px;
+}
+
+.projectsDesc img
+{
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	/*height: 275px;*/
+	max-width: 275px;
+	max-height: 275px;
+	width: 230px;
+	height: 230px;
+}
+
+.projectsDesc h3
+{
+	/*height: 60px;*/
+	font-family: Apple Symbols, Arial, sans-serif;
+	font-size: 25px;
+	color: #717172;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.projectsDesc a
+{
+	display: block;
+	margin: 0 auto;
+	width: 160px;
+	color: #03552a;
+	text-align: center;
+	font-family: Apple Symbols, Arial, sans-serif;
+	font-size: 25px;
+	text-decoration: none;
+	background-color: #e1eae6;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	border-top: solid 1px #b1d1c1;
+}
+
+.projectsDesc a:hover
+{
+	background: #e1eae6; 
+	background: -moz-linear-gradient(top, #e1eae6 0%, #c0d3c9 50%, #e1eae6 100%); 
+	background: -webkit-linear-gradient(top, #e1eae6 0%,#c0d3c9 50%,#e1eae6 100%); 
+	background: linear-gradient(to bottom, #e1eae6 0%,#c0d3c9 50%,#e1eae6 100%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e1eae6', endColorstr='#e1eae6',GradientType=0 );
+	color:#006633
+}
+
+/* ============= END PROJECTS SECTION =============*/
+
+/* ============= EVENTS SECTION ===================*/
+
+#eventPage
+{
+
+	background-color: #ebebeb;
+	display:flex;
+	flex-direction: column;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+#eventPage h2
+{
+	margin-top:100px;
+	font-size:25px;
+	font-family: 'Montserrat' ,Andale Mono, Helvetica, sans-serif;
+	color: #00a653;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.waterlineEvent
+{
+	margin: 0 auto;
+	margin-bottom: 70px;
+	max-width: 350px;
+	width: 165px;
+}
+
+#firstEvent
+{
+	max-width: 1325px;
+	margin: 0 auto;
+}
+
+#anotherEvents
+{
+	max-width: 1325px;
+	margin: 0 auto;
+/*	margin-top: 100px;*/
+
+}
+
+.event
+{
+	max-width:320px;
+	background-color: #e1e1e1;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 70px;
+}
+
+.event h3
+{
+	font-size:23px;
+	color: #474747;
+	font-family: Myriad Pro, Arial, sans-serif;
+	margin:20px;
+}
+
+.event img
+{
+	/*max-width:380px;
+	max-height: 278px;*/
+	filter: brightness(.9);
+	transition: transform .2s
+}
+
+.event img:hover
+{
+	filter: none;
+	transform: scale(1.01);
+}
+
+.event p
+{
+	margin-top:5px;
+	margin-left: 16px;
+	margin-bottom: 25px;
+	font-size:16px;
+	color: grey;
+	font-family: Myriad Pro, Arial, sans-serif;
+	line-height:23px;
+}
+
+.eventButton
+{
+	max-width:175px;
+	max-height:50px;
+	background-color: #2e7551;
+	font-size: 30px;
+	color:#fff;
+	text-decoration: none;
+	text-align: center;
+	font-family: Apple Symbols, Arial;
+	margin-left:25px;
+/*	margin-top:25px;*/
+	margin-bottom:25px;
+	background-color: #2e7551;
+}
+
+
+.eventButton:hover
+{
+	background: #2e7551;
+	background: -moz-linear-gradient(top, #2e7551 1%, #35845b 50%, #2e7551 100%); 
+	background: -webkit-linear-gradient(top, #2e7551 1%,#35845b 50%,#2e7551 100%); 
+	background: linear-gradient(to bottom, #2e7551 1%,#35845b 50%,#2e7551 100%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2e7551', endColorstr='#2e7551',GradientType=0 );
+	color: #fff;
+}
+
+.eventButtonCon
+{
+	margin: 0 auto;
+	margin-top: 50px;
+	margin-bottom: 80px;
+}
+
+#bigEventButton
+{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	justify-content: center;
+	font-family: Apple Symbols, Arial;
+	text-decoration: none;
+	color: #fff;
+	font-size:30px;
+	text-align:center;
+	background-color: #2e7551;
+}
+
+/*#bigEventButton:hover
+{
+	background: #2e7551;
+	background: -moz-linear-gradient(top, #2e7551 1%, #35845b 50%, #2e7551 100%); 
+	background: -webkit-linear-gradient(top, #2e7551 1%,#35845b 50%,#2e7551 100%); 
+	background: linear-gradient(to bottom, #2e7551 1%,#35845b 50%,#2e7551 100%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2e7551', endColorstr='#2e7551',GradientType=0 );
+	color: #fff;
+}*/
+
+/* ============= END EVENTS =======================*/
+
+
+
+
+
+
+
+
