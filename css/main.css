@@ -327,7 +327,7 @@ video
 
 #membership img
 {
-	max-width:270px;
+	max-width:180px;
 	margin: 0 auto;
 	width: 115px;
 	display: block;
@@ -921,6 +921,26 @@ video
 		width: 180px;
 		font-size: 28px; 
 	}
+	
+	#membershipText h2
+	{
+	 font-size: 35px;
+	}
+	
+	#membershipText h3
+	{
+		font-size: 23px;
+	}
+	
+	#membershipText p
+	{
+		font-size: 20px;
+	}
+	
+	.waterlineProjects
+	{
+		width: 200px;
+	}
 }
 
 /* ========= 600px ====================*/
@@ -973,6 +993,21 @@ video
 		width: 200px;
 		font-size: 32px; 
 	}
+	
+/* 	#membershipText h2
+	{
+	 font-size: 40px;
+	}
+	
+	#membershipText h3
+	{
+		font-size: 25px;
+	}
+	
+	#membershipText p
+	{
+		font-size: 22px;
+	} */
 }
 
 /* ========= 800px =================== */
@@ -1015,6 +1050,45 @@ video
 		font-size: 25px;
 		margin-left: 35px;
 	}
+	
+	#membership
+	{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between
+	}
+	
+	#membershipText
+	{
+		width: 60%;
+	}
+	
+	#membershipText h2, #membershipText h3, #membershipText p
+	{
+		text-align: left;
+		margin: 0;
+	}
+	
+	#membership h2
+	{
+		margin-top: 40px;
+		margin-bottom: 20px;
+	}
+	
+	#membership h3
+	{
+		margin-bottom: 10px;
+	}
+	
+	#membership p
+	{
+		margin-bottom: 50px;
+	}
+	
+	#membership img
+	{
+		width: 180px;
+	}
 }
 
 /* ========= 1024px =================== */
@@ -1051,7 +1125,7 @@ video
 	
 	.aboutSection h2, .projectsCon h2, #eventPage h2, .contact h2
 	{
-		font-size: 50px;
+		font-size: 60px;
 		margin-bottom: 30px;
 	}
 	
@@ -1063,6 +1137,7 @@ video
 	.aboutSection
 	{
 		padding: 0;
+		margin-bottom: 150px
 	}
 	
 		.aboutIcon
@@ -1081,6 +1156,31 @@ video
 	{
 		width: 220px;
 		font-size: 40px; 
+	}
+	
+	#membership
+	{
+		margin-bottom: 130px;
+	}
+	
+	#membershipText
+	{
+		width: 100%;
+	}
+	
+	#membership h2
+	{
+		font-size: 60px;
+	}
+	
+	#membership h3
+	{
+		font-size: 30px;
+	}
+	
+	#membership p
+	{
+		font-size: 28px;
 	}
 }
 
