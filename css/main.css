@@ -20,23 +20,30 @@ html {
 *::after {
   box-sizing: inherit; }
 
- .container {
+/* .container {
   margin: 0px auto;
   padding: 0px 15px 0 15px;
   max-width: 1200px; 
-}
+}*/
 
 
 /*========= Nav ==============*/
 
-#mainHeader
+.headerCon
 {
 	background: #2e7551;
 	background: -moz-linear-gradient(top, #2e7551 1%, #35845b 50%, #2e7551 100%); 
 	background: -webkit-linear-gradient(top, #2e7551 1%,#35845b 50%,#2e7551 100%); 
 	background: linear-gradient(to bottom, #2e7551 1%,#35845b 50%,#2e7551 100%); 
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2e7551', endColorstr='#2e7551',GradientType=0 );
+}
+
+#mainHeader
+{
+	padding-right: 15px;
 	padding-bottom: 15px;
+	max-width: 1200px;
+	margin: 0 auto;
 }
 
 #mainNav
@@ -608,7 +615,7 @@ video
 	max-width: 700px;
 	padding-left: 15px;
 	padding-right: 15px;
-	margin-bottom: 90px;	
+	margin-bottom: 130px;	
 }
 
 .newsHeader
@@ -664,6 +671,26 @@ video
 
 
 /* ============= END NEWSLETTER ===============*/
+
+/* ============= GEAR SECTION =================*/
+
+#gearCon h2
+{
+	font-size: 25px;
+	font-family: 'Montserrat',Andale Mono, Helvetica, sans-serif;
+	color: #00a651;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+#gearCon img
+{
+	display: block;
+	margin: 0 auto;
+	width: 200px;
+	margin-bottom: 80px;
+}
+/* ============= END GEAR ======================*/
 
 /* ============ CONTACT  ====================*/
 .contactCon
@@ -1255,6 +1282,13 @@ video
 	{
 		max-width: 240px;
 	}
+	
+	.accordion {
+  border-bottom: solid 1.2px #00a651;
+  padding: 15px 40px;
+  margin-bottom: 25px;
+  font-size: 22px
+}
 }
 
 /*======= 900px ===========================  */
@@ -1280,7 +1314,55 @@ video
 
 /* ========= 1024px =================== */
 @media screen and (min-width: 1024px) {
+	
+	
+	#mainHeader
+	{
+		display: flex;
+		flex-direction: row;
+		max-width: 1062px;
+		margin: 0 auto;
+		padding: 0;
+		padding-top: 10px;
+		justify-content: space-between;
+	}
+	
+	#button
+	{
+		display: none;
+	}
 
+	#logoCon
+	{
+		order: -1;
+		width: 100px;
+		height: 90px;
+	}
+	
+	#burgerCon
+	{
+		display: flex;
+	}
+	
+	#burgerMenu
+	{
+		display: flex;
+		flex-direction: row;
+	}
+	
+	#burgerCon ul li a
+	{
+		font-size: 17px;
+	 margin-left: 30px;
+	}
+	
+	#burgerCon  ul li a:hover
+  {
+	color: #00c15e;
+	border-bottom: solid 3px;
+	padding-bottom: 8px;
+  }
+	
 	.welcomeCon
 	{
 		margin-top: 120px;
