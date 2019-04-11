@@ -7,6 +7,7 @@
 
 	var button = document.querySelector("#button");
 	var burgerCon = document.querySelector("#burgerCon");
+	var accordions = document.querySelectorAll(".accordion");
 
 	function hamburgerMenu() {
 		burgerCon.classList.toggle("slideToggle");
@@ -23,9 +24,17 @@
 
 	}
 
+	function openClose(e){
+		e.currentTarget.classList.toggle('plusMinus');
+		e.currentTarget.nextElementSibling.classList.toggle('isOpen');
+	}
+
+
 	button.addEventListener("click", hamburgerMenu, false);
 
 	window.addEventListener("resize", closeMenu);
+
+	accordions.forEach(accordion => accordion.addEventListener('click', openClose));
 
 		
 })();

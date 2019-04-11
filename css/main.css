@@ -20,23 +20,30 @@ html {
 *::after {
   box-sizing: inherit; }
 
- .container {
+/* .container {
   margin: 0px auto;
   padding: 0px 15px 0 15px;
   max-width: 1200px; 
-}
+}*/
 
 
 /*========= Nav ==============*/
 
-#mainHeader
+.headerCon
 {
 	background: #2e7551;
 	background: -moz-linear-gradient(top, #2e7551 1%, #35845b 50%, #2e7551 100%); 
 	background: -webkit-linear-gradient(top, #2e7551 1%,#35845b 50%,#2e7551 100%); 
 	background: linear-gradient(to bottom, #2e7551 1%,#35845b 50%,#2e7551 100%); 
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2e7551', endColorstr='#2e7551',GradientType=0 );
+}
+
+#mainHeader
+{
+	padding-right: 15px;
 	padding-bottom: 15px;
+	max-width: 1200px;
+	margin: 0 auto;
 }
 
 #mainNav
@@ -327,7 +334,7 @@ video
 
 #membership img
 {
-	max-width:270px;
+	max-width:180px;
 	margin: 0 auto;
 	width: 115px;
 	display: block;
@@ -407,8 +414,8 @@ video
 	/*height: 275px;*/
 	max-width: 275px;
 	max-height: 275px;
-	width: 230px;
-	height: 230px;
+/*! width: 230px; */ /*
+	height: 230px;*/
 }
 
 .projectsDesc h3
@@ -597,6 +604,93 @@ video
 }
 
 /* ============= END EVENTS =======================*/
+
+/* ============= NEWSLETTER ===================*/
+
+
+#newsletter
+{
+	margin: 0 auto;
+	margin-top: 80px;
+	max-width: 700px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-bottom: 130px;	
+}
+
+.newsHeader
+{
+	font-size: 25px;
+	font-family: 'Montserrat',Andale Mono, Helvetica, sans-serif;
+	color: #00a651;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.waterlineNewsletter
+{
+	display: block;
+	margin: 0 auto;
+	width: 200px;
+	margin-bottom: 80px;
+}
+
+.accordion {
+  text-align: left;
+  border-bottom: solid 1.2px #00a651;
+  padding: 15px 20px;
+  font-family: 'Montserrat',Andale Mono, Helvetica, sans-serif;
+  color: #00a651;
+  cursor: pointer;
+  margin-bottom: 25px;
+  font-size: 20px
+}
+
+.accordion:after 
+{
+  content: " +";
+}
+
+.accordion.plusMinus:after 
+{
+  content: " -";
+}
+
+.accordion-content {
+  background-color: white;
+  padding: 0 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: none;
+}
+
+.accordion-content.isOpen
+{
+  display: block;
+}
+
+
+/* ============= END NEWSLETTER ===============*/
+
+/* ============= GEAR SECTION =================*/
+
+#gearCon h2
+{
+	font-size: 25px;
+	font-family: 'Montserrat',Andale Mono, Helvetica, sans-serif;
+	color: #00a651;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+#gearCon img
+{
+	display: block;
+	margin: 0 auto;
+	width: 200px;
+	margin-bottom: 80px;
+}
+/* ============= END GEAR ======================*/
 
 /* ============ CONTACT  ====================*/
 .contactCon
@@ -873,6 +967,19 @@ video
 	{
 		margin-bottom: 0;
 	}
+
+
+	.projectsDesc h3
+	{
+		font-size: 27px;
+	}
+
+	.projectsDesc a
+	{
+		width: 170px;
+		font-family: Apple Symbols, Arial, sans-serif;
+		font-size: 27px;
+	}
 }
 
  /* ========= 480px ======================*/
@@ -920,6 +1027,43 @@ video
 	{
 		width: 180px;
 		font-size: 28px; 
+	}
+	
+	#membershipText h2
+	{
+	 font-size: 35px;
+	}
+	
+	#membershipText h3
+	{
+		font-size: 23px;
+	}
+	
+	#membershipText p
+	{
+		font-size: 20px;
+	}
+	
+	.waterlineProjects
+	{
+		width: 200px;
+	}
+	
+	.projectsInfo
+	{
+		font-size: 23px;
+	}
+	
+		.projectsDesc h3
+	{
+		font-size: 27px;
+	}
+
+	.projectsDesc a
+	{
+		width: 170px;
+		font-family: Apple Symbols, Arial, sans-serif;
+		font-size: 27px;
 	}
 }
 
@@ -973,6 +1117,39 @@ video
 		width: 200px;
 		font-size: 32px; 
 	}
+	
+	#membershipText h2
+	{
+	 font-size: 40px;
+	}
+	
+	#membershipText h3
+	{
+		font-size: 25px;
+	}
+	
+	#membershipText p
+	{
+		font-size: 22px;
+	}
+	
+	.projectsInfo
+	{
+		font-size: 25px;
+		line-height: 35px;
+	}
+	
+		.projectsDesc h3
+	{
+		font-size: 30px;
+	}
+
+	.projectsDesc a
+	{
+		width: 170px;
+		font-family: Apple Symbols, Arial, sans-serif;
+		font-size: 30px;
+	}
 }
 
 /* ========= 800px =================== */
@@ -1015,11 +1192,177 @@ video
 		font-size: 25px;
 		margin-left: 35px;
 	}
+	
+	#membership
+	{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	
+	#membershipText
+	{
+		width: 60%;
+	}
+	
+	#membershipText h2, #membershipText h3, #membershipText p
+	{
+		text-align: left;
+		margin: 0;
+	}
+	
+	#membership h2
+	{
+		margin-top: 40px;
+		margin-bottom: 20px;
+	}
+	
+	#membership h3
+	{
+		margin-bottom: 10px;
+	}
+	
+	#membership p
+	{
+		margin-bottom: 50px;
+	}
+	
+	#membership img
+	{
+		width: 180px;
+	}
+	
+	.projectsInfo
+	{
+		font-size: 26px;
+		line-height: 38px;
+	}
+	
+	.projects
+	{
+		display: flex;
+		justify-content: space-around;
+		width: 100%;
+	}
+	
+	.projectsDesc
+	{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		max-width: 200px;
+	}
+	
+
+	.projectsDesc img
+	{
+		margin-bottom: 35px;
+	  max-width: 200px;
+	}
+
+	.projectsDesc h3
+	{
+		font-size: 23px;
+	}
+
+	.projectsDesc a
+	{
+		font-size: 25px;
+	}
+	
+	#firstEvent, #anotherEvents
+	{
+		margin: 0;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+	
+	.event
+	{
+		max-width: 240px;
+	}
+	
+	.accordion {
+  border-bottom: solid 1.2px #00a651;
+  padding: 15px 40px;
+  margin-bottom: 25px;
+  font-size: 22px
+}
+}
+
+/*======= 900px ===========================  */
+
+@media screen and (min-width: 900px) {
+	.projectsDesc
+	{
+		max-width: 240px;
+	}
+	
+
+	.projectsDesc img
+	{
+		margin-bottom: 35px;
+	  max-width: 220px;
+	}
+	
+	.event
+	{
+		max-width: 270px;
+	}
 }
 
 /* ========= 1024px =================== */
 @media screen and (min-width: 1024px) {
+	
+	
+	#mainHeader
+	{
+		display: flex;
+		flex-direction: row;
+		max-width: 1062px;
+		margin: 0 auto;
+		padding: 0;
+		padding-top: 10px;
+		justify-content: space-between;
+	}
+	
+	#button
+	{
+		display: none;
+	}
 
+	#logoCon
+	{
+		order: -1;
+		width: 100px;
+		height: 90px;
+	}
+	
+	#burgerCon
+	{
+		display: flex;
+	}
+	
+	#burgerMenu
+	{
+		display: flex;
+		flex-direction: row;
+	}
+	
+	#burgerCon ul li a
+	{
+		font-size: 17px;
+	 margin-left: 30px;
+	}
+	
+	#burgerCon  ul li a:hover
+  {
+	color: #00c15e;
+	border-bottom: solid 3px;
+	padding-bottom: 8px;
+  }
+	
 	.welcomeCon
 	{
 		margin-top: 120px;
@@ -1051,7 +1394,7 @@ video
 	
 	.aboutSection h2, .projectsCon h2, #eventPage h2, .contact h2
 	{
-		font-size: 50px;
+		font-size: 60px;
 		margin-bottom: 30px;
 	}
 	
@@ -1063,6 +1406,7 @@ video
 	.aboutSection
 	{
 		padding: 0;
+		margin-bottom: 150px
 	}
 	
 		.aboutIcon
@@ -1082,6 +1426,100 @@ video
 		width: 220px;
 		font-size: 40px; 
 	}
+	
+	#membership
+	{
+		margin-bottom: 130px;
+	}
+	
+	#membershipText
+	{
+		width: 100%;
+	}
+	
+	#membership h2
+	{
+		font-size: 60px;
+	}
+	
+	#membership h3
+	{
+		font-size: 30px;
+	}
+	
+	#membership p
+	{
+		font-size: 28px;
+	}
+	
+	.projectsInfo
+	{
+		font-size: 28px;
+		line-height: 41px;
+		margin-bottom: 150px;
+	}
+	
+	.projectsDesc
+	{
+		max-width: 320px;
+		margin-bottom: 160px;
+	}
+	
+
+	.projectsDesc img
+	{
+		margin-bottom: 35px;
+	  max-width: 270px;
+	}
+	
+	.projectsDesc h3
+	{
+		font-size: 35px;
+	}
+	
+	.projectsDesc a
+	{
+		font-size: 33px;
+		width:  170px;
+	}
+	
+	.event
+	{
+		margin: 0;
+		max-width: 320px;
+	}
+
+	#firstEvent
+	{
+		margin-bottom: 100px;
+	}
+	
+	#anotherEvents
+	{
+		margin-bottom: 80px;
+	}
+	
+}
+
+/* =================== 1325px ================== */
+
+@media screen and (min-width: 1325px) {
+	#firstEvent 
+	{
+		width: 1325px;
+		margin: 0 auto;
+		margin-bottom: 100px;
+	}
+	
+	#anotherEvents
+	{
+		width: 1325px;
+		margin: 0 auto;
+		margin-bottom: 80px;
+	}
+	
+	
+	
 }
 
 
