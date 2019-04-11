@@ -407,8 +407,8 @@ video
 	/*height: 275px;*/
 	max-width: 275px;
 	max-height: 275px;
-	width: 230px;
-	height: 230px;
+/*	width: 230px;
+	height: 230px;*/
 }
 
 .projectsDesc h3
@@ -873,6 +873,19 @@ video
 	{
 		margin-bottom: 0;
 	}
+
+
+	.projectsDesc h3
+	{
+		font-size: 27px;
+	}
+
+	.projectsDesc a
+	{
+		width: 170px;
+		font-family: Apple Symbols, Arial, sans-serif;
+		font-size: 27px;
+	}
 }
 
  /* ========= 480px ======================*/
@@ -941,6 +954,23 @@ video
 	{
 		width: 200px;
 	}
+	
+	.projectsInfo
+	{
+		font-size: 23px;
+	}
+	
+		.projectsDesc h3
+	{
+		font-size: 27px;
+	}
+
+	.projectsDesc a
+	{
+		width: 170px;
+		font-family: Apple Symbols, Arial, sans-serif;
+		font-size: 27px;
+	}
 }
 
 /* ========= 600px ====================*/
@@ -994,7 +1024,7 @@ video
 		font-size: 32px; 
 	}
 	
-/* 	#membershipText h2
+	#membershipText h2
 	{
 	 font-size: 40px;
 	}
@@ -1007,7 +1037,25 @@ video
 	#membershipText p
 	{
 		font-size: 22px;
-	} */
+	}
+	
+	.projectsInfo
+	{
+		font-size: 25px;
+		line-height: 35px;
+	}
+	
+		.projectsDesc h3
+	{
+		font-size: 30px;
+	}
+
+	.projectsDesc a
+	{
+		width: 170px;
+		font-family: Apple Symbols, Arial, sans-serif;
+		font-size: 30px;
+	}
 }
 
 /* ========= 800px =================== */
@@ -1055,7 +1103,7 @@ video
 	{
 		display: flex;
 		flex-direction: row;
-		justify-content: space-between
+		justify-content: space-between;
 	}
 	
 	#membershipText
@@ -1088,6 +1136,60 @@ video
 	#membership img
 	{
 		width: 180px;
+	}
+	
+	.projectsInfo
+	{
+		font-size: 26px;
+		line-height: 38px;
+	}
+	
+	.projects
+	{
+		display: flex;
+		justify-content: space-evenly;
+		width: 100%;
+	}
+	
+	.projectsDesc
+	{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		max-width: 200px;
+	}
+	
+
+	.projectsDesc img
+	{
+		margin-bottom: 35px;
+	  max-width: 200px;
+	}
+
+	.projectsDesc h3
+	{
+		font-size: 23px;
+	}
+
+	.projectsDesc a
+	{
+		font-size: 25px;
+	}
+}
+
+/*======= 900px ===========================  */
+
+@media screen and (min-width: 900px) {
+	.projectsDesc
+	{
+		max-width: 240px;
+	}
+	
+
+	.projectsDesc img
+	{
+		margin-bottom: 35px;
+	  max-width: 220px;
 	}
 }
 
@@ -1181,6 +1283,37 @@ video
 	#membership p
 	{
 		font-size: 28px;
+	}
+	
+	.projectsInfo
+	{
+		font-size: 28px;
+		line-height: 41px;
+		margin-bottom: 150px;
+	}
+	
+	.projectsDesc
+	{
+		max-width: 320px;
+		margin-bottom: 160px;
+	}
+	
+
+	.projectsDesc img
+	{
+		margin-bottom: 35px;
+	  max-width: 270px;
+	}
+	
+	.projectsDesc h3
+	{
+		font-size: 35px;
+	}
+	
+	.projectsDesc a
+	{
+		font-size: 33px;
+		width:  170px;
 	}
 }
 
