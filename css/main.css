@@ -407,7 +407,7 @@ video
 	/*height: 275px;*/
 	max-width: 275px;
 	max-height: 275px;
-/*	width: 230px;
+/*! width: 230px; */ /*
 	height: 230px;*/
 }
 
@@ -597,6 +597,73 @@ video
 }
 
 /* ============= END EVENTS =======================*/
+
+/* ============= NEWSLETTER ===================*/
+
+
+#newsletter
+{
+	margin: 0 auto;
+	margin-top: 80px;
+	max-width: 700px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-bottom: 90px;	
+}
+
+.newsHeader
+{
+	font-size: 25px;
+	font-family: 'Montserrat',Andale Mono, Helvetica, sans-serif;
+	color: #00a651;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.waterlineNewsletter
+{
+	display: block;
+	margin: 0 auto;
+	width: 200px;
+	margin-bottom: 80px;
+}
+
+.accordion {
+  text-align: left;
+  border-bottom: solid 1.2px #00a651;
+  padding: 15px 20px;
+  font-family: 'Montserrat',Andale Mono, Helvetica, sans-serif;
+  color: #00a651;
+  cursor: pointer;
+  margin-bottom: 25px;
+  font-size: 20px
+}
+
+.accordion:after 
+{
+  content: " +";
+}
+
+.accordion.plusMinus:after 
+{
+  content: " -";
+}
+
+.accordion-content {
+  background-color: white;
+  padding: 0 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: none;
+}
+
+.accordion-content.isOpen
+{
+  display: block;
+}
+
+
+/* ============= END NEWSLETTER ===============*/
 
 /* ============ CONTACT  ====================*/
 .contactCon
@@ -1147,7 +1214,7 @@ video
 	.projects
 	{
 		display: flex;
-		justify-content: space-evenly;
+		justify-content: space-around;
 		width: 100%;
 	}
 	
@@ -1175,6 +1242,19 @@ video
 	{
 		font-size: 25px;
 	}
+	
+	#firstEvent, #anotherEvents
+	{
+		margin: 0;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+	
+	.event
+	{
+		max-width: 240px;
+	}
 }
 
 /*======= 900px ===========================  */
@@ -1190,6 +1270,11 @@ video
 	{
 		margin-bottom: 35px;
 	  max-width: 220px;
+	}
+	
+	.event
+	{
+		max-width: 270px;
 	}
 }
 
@@ -1315,6 +1400,44 @@ video
 		font-size: 33px;
 		width:  170px;
 	}
+	
+	.event
+	{
+		margin: 0;
+		max-width: 320px;
+	}
+
+	#firstEvent
+	{
+		margin-bottom: 100px;
+	}
+	
+	#anotherEvents
+	{
+		margin-bottom: 80px;
+	}
+	
+}
+
+/* =================== 1325px ================== */
+
+@media screen and (min-width: 1325px) {
+	#firstEvent 
+	{
+		width: 1325px;
+		margin: 0 auto;
+		margin-bottom: 100px;
+	}
+	
+	#anotherEvents
+	{
+		width: 1325px;
+		margin: 0 auto;
+		margin-bottom: 80px;
+	}
+	
+	
+	
 }
 
 
