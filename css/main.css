@@ -616,7 +616,7 @@ video
 	max-width: 700px;
 	padding-left: 15px;
 	padding-right: 15px;
-	margin-bottom: 130px;	
+	margin-bottom: 30px;	
 }
 
 .newsHeader
@@ -633,7 +633,7 @@ video
 	display: block;
 	margin: 0 auto;
 	width: 200px;
-	margin-bottom: 80px;
+	margin-bottom: 100px;
 }
 
 .accordion {
@@ -665,6 +665,13 @@ video
   display: none;
 }
 
+.accordion-content p
+{
+	font-family: 'Montserrat',Andale Mono, Helvetica, sans-serif;
+  color: #717172;
+  margin-top: 10px;	
+}
+
 .accordion-content.isOpen
 {
   display: block;
@@ -677,6 +684,7 @@ video
 
 #gearCon h2
 {
+	margin-top: 170px;
 	font-size: 25px;
 	font-family: 'Montserrat',Andale Mono, Helvetica, sans-serif;
 	color: #00a651;
@@ -1749,9 +1757,6 @@ footer
 		margin: 0 auto;
 		margin-bottom: 80px;
 	}
-	
-	
-	
 }
 
 
