@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="initial-scale=1.0, width=device-width">
@@ -7,38 +7,40 @@
   <link href="css/reset.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:500" rel="stylesheet"> 
   <link href="css/main.css" rel="stylesheet" type="text/css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/ScrollToPlugin.min.js"></script>
 </head>
 <body>
 <h1 class="hidden">Thames River Anglers Association</h1>
 
 <!--HEADER  -->
 	
-	<div class="headerCon">
+<div class="headerCon">
 	<header id="mainHeader">
         <nav id="mainNav">
           <h2 class="hidden">Main Navigation</h2>
           <button id="button"></button>
           <div id="burgerCon">
             <ul id="burgerMenu">
-              <li><a href="#">HOME</a></li>
-              <li><a href="#">ABOUT</a></li>
-              <li><a href="#">EVENTS</a></li>
-              <li><a href="#">PROJECTS</a></li>
-              <li><a href="#">NEWSLETTER</a></li>
-              <li><a href="#">CONTACT</a></li>
+              <li><a href="home" id="homeBtn">HOME</a></li>
+              <li><a href="about" id="aboutBtn">ABOUT</a></li>
+              <li><a href="events" id="eventsBtn">EVENTS</a></li>
+              <li><a href="projects" id="projectsBtn">PROJECTS</a></li>
+              <li><a href="newsletter" id="newsletterBtn">NEWSLETTER</a></li>
+              <li><a href="contact" id="contactBtn">CONTACT</a></li>
             </ul>
+           </div>
         </nav>
 
         <div id="logoCon">
           <a href="index.html" ><img src="images/logo.svg" alt="TRAA Logo" id="logo"></a>
         </div>
-    </div>
     </header>
-	</div>
+</div>
 
     <div class="hero">
     	<div class="welcomeCon">
-    		<h2 class="welcome">Welcome to the TRAA</h2>
+    		<h2 class="welcome" id="home">Welcome to the TRAA</h2>
     		<img class="welcomeWaterline" src="images/waterline.svg" alt="Water Line">
     		<h3 class="introText">Dedication Today for Tomorrow</h3>
     		<p>“For the enhancement, protection and promotion of a viable,<br>multi-species fishery within the Thames River watershed.”</p>
@@ -49,7 +51,7 @@
 
 <!-- ABOUT SECTION -->
 	<section class="aboutSection">
-		<h2>About the TRAA</h2>
+		<h2 id="about">About the TRAA</h2>
 		<img class="waterlineAbout" src="images/waterline.svg" alt="Water Line">
 
 		<video controls>
@@ -99,6 +101,7 @@
 			<div id="aboutButton">
 				<a href="#" class="greenButton">Contact Us</a>
 				<a href="#" class="greyButton">See more</a>
+			</div>
 	</section>
 <!-- END ABOUT SECTION -->
 
@@ -119,7 +122,7 @@
 	<section class="projectsCon">
 
 		<div class="projectsHeader">
-		<h2>Projects</h2>
+		<h2 id="projects">Projects</h2>
 		<img  src="images/waterline.svg"  alt="Water Line" class="waterlineProjects">
 
 		<p class="projectsInfo">This is what sets the TRAA apart from other clubs and organizations. You'll find us right in the water clearing obstructions from streams, measuring returning salmonids & taking scale samples for DNA analysis, education through trout hatchery tours & stream walks, being a voice for the Thames River watershed & its inhabitants and the list goes on.</p>
@@ -154,7 +157,7 @@
 
 <!-- ENVETNS SECTION -->
 	<section id="eventPage">
-			<h2>Events</h2>
+			<h2 id="events">Events</h2>
 			<img class="waterlineEvent" src="images/waterline.svg" alt="Water line">
 			<div id="firstEvent">
 				<section class="event">
@@ -213,28 +216,49 @@
 
 	<section id="newsletter">
 		
-		<h2 class="newsHeader">Newsletter</h2>
+		<h2 class="newsHeader" id="newsletter">Newsletter</h2>
 		<img src="images/waterline.svg" alt="Water Line" class="waterlineNewsletter">
-		<div id="timeline">
+	<div id="timeline">
 
 		<h2 class="accordion">2011</h2>
 	    <div class="accordion-content">
 	      <p>
-	        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas deleniti molestias necessitatibus quaerat quos incidunt! Quas officiis repellat dolore omnis nihil quo, ratione cupiditate! Sed, deleniti, recusandae! Animi, sapiente, nostrum?
+	        1st Quarter 
 	      </p>
 	    </div>
 
 	    <h2 class="accordion">2010</h2>
 	    <div class="accordion-content">
 	      <p>
-	        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas deleniti molestias necessitatibus quaerat quos incidunt! Quas officiis repellat dolore omnis nihil quo, ratione cupiditate! Sed, deleniti, recusandae! Animi, sapiente, nostrum?
+	        April
 	      </p>
 	    </div>
 
 	    <h2 class="accordion">2009</h2>
 	    <div class="accordion-content">
 	      <p>
-	        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas deleniti molestias necessitatibus quaerat quos incidunt! Quas officiis repellat dolore omnis nihil quo, ratione cupiditate! Sed, deleniti, recusandae! Animi, sapiente, nostrum?
+	        March
+	      </p>
+	      <p>
+	        May
+	      </p>
+	      <p>
+	        June
+	      </p>
+	      <p>
+	        August
+	      </p>
+	      <p>
+	        September
+	      </p>
+	      <p>
+	        October
+	      </p>
+	      <p>
+	        November
+	      </p>
+	      <p>
+	        December
 	      </p>
 	    </div>
 
@@ -259,76 +283,20 @@
 	      </p>
 	    </div>
 
-	    <h2 class="accordion">2005</h2>
+	    <h2 class="accordion">2005 - 2000</h2>
 	    <div class="accordion-content">
 	      <p>
 	        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas deleniti molestias necessitatibus quaerat quos incidunt! Quas officiis repellat dolore omnis nihil quo, ratione cupiditate! Sed, deleniti, recusandae! Animi, sapiente, nostrum?
 	      </p>
 	    </div>
 
-	    <h2 class="accordion">2004</h2>
+	    <h2 class="accordion">1999 - 1986</h2>
 	    <div class="accordion-content">
 	      <p>
 	        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas deleniti molestias necessitatibus quaerat quos incidunt! Quas officiis repellat dolore omnis nihil quo, ratione cupiditate! Sed, deleniti, recusandae! Animi, sapiente, nostrum?
 	      </p>
 	    </div>
-
-	    <h2 class="accordion">2003</h2>
-	    <div class="accordion-content">
-	      <p>
-	        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas deleniti molestias necessitatibus quaerat quos incidunt! Quas officiis repellat dolore omnis nihil quo, ratione cupiditate! Sed, deleniti, recusandae! Animi, sapiente, nostrum?
-	      </p>
-	    </div>
-
-	    <h2 class="accordion">2002</h2>
-	    <div class="accordion-content">
-	      <p>
-	        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas deleniti molestias necessitatibus quaerat quos incidunt! Quas officiis repellat dolore omnis nihil quo, ratione cupiditate! Sed, deleniti, recusandae! Animi, sapiente, nostrum?
-	      </p>
-	    </div>
-
-	    <h2 class="accordion">2001</h2>
-	    <div class="accordion-content">
-	      <p>
-	        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas deleniti molestias necessitatibus quaerat quos incidunt! Quas officiis repellat dolore omnis nihil quo, ratione cupiditate! Sed, deleniti, recusandae! Animi, sapiente, nostrum?
-	      </p>
-	    </div>
-
-	    <h2 class="accordion">2000</h2>
-	    <div class="accordion-content">
-	      <p>
-	        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas deleniti molestias necessitatibus quaerat quos incidunt! Quas officiis repellat dolore omnis nihil quo, ratione cupiditate! Sed, deleniti, recusandae! Animi, sapiente, nostrum?
-	      </p>
-	    </div>
-
-	    <h2 class="accordion">1999</h2>
-	    <div class="accordion-content">
-	      <p>
-	        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas deleniti molestias necessitatibus quaerat quos incidunt! Quas officiis repellat dolore omnis nihil quo, ratione cupiditate! Sed, deleniti, recusandae! Animi, sapiente, nostrum?
-	      </p>
-	    </div>
-
-	    <h2 class="accordion">1997</h2>
-	    <div class="accordion-content">
-	      <p>
-	        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas deleniti molestias necessitatibus quaerat quos incidunt! Quas officiis repellat dolore omnis nihil quo, ratione cupiditate! Sed, deleniti, recusandae! Animi, sapiente, nostrum?
-	      </p>
-	    </div>
-
-	    <h2 class="accordion">1996</h2>
-	    <div class="accordion-content">
-	      <p>
-	        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas deleniti molestias necessitatibus quaerat quos incidunt! Quas officiis repellat dolore omnis nihil quo, ratione cupiditate! Sed, deleniti, recusandae! Animi, sapiente, nostrum?
-	      </p>
-	    </div>
-
-	    <h2 class="accordion">1986</h2>
-	    <div class="accordion-content">
-	      <p>
-	        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas deleniti molestias necessitatibus quaerat quos incidunt! Quas officiis repellat dolore omnis nihil quo, ratione cupiditate! Sed, deleniti, recusandae! Animi, sapiente, nostrum?
-	      </p>
-	    </div>
-
+	</div>
 	</section>
 
 <!-- END NEWSLETTER -->
@@ -347,7 +315,7 @@
 <div class="contactCon">
 		
 		<section class="contact">
-			<h2>Contact Us</h2>
+			<h2 id="contact">Contact Us</h2>
 			<img src="images/waterline.svg" class="waterlineContact" alt="Water Line">
 			<p class="contactInfo">If you're with a like-minded organization or group looking for more information on the TRAA and its activities or
 			if you're an individual who would like to become involved with the activities undertaken by the TRAA</p>
@@ -435,6 +403,52 @@
 			</section>
 		</div>
 <!-- END SOCIAL MEDIA -->
+
+<!-- FOOTER -->
+	
+	<div class="footerCon">
+		<footer>
+		<h2 class="hidden">Footer Section</h2>
+
+			<section class="footerNavCon">
+				<h3>NAVIGATION</h3>
+				<nav class="footerNav">
+				<h2 class="hidden">Footer Navigation</h2>
+					<ul>
+						<li><a href="home" id="homeBtn">HOME</a></li>
+						<li><a href="about" id="aboutBtn">ABOUT</a></li>
+						<li><a href="events" id="eventsBtn">EVENTS</a></li>
+						<li><a href="projects" id="projectsBtn">PROJECTS</a></li>
+						<li><a href="newsletter" id="newsletterBtn">NEWSLETTER</a></li>
+						<li><a href="contact" id="contactBtn">CONTACT</a></li>
+					</ul>
+				</nav>
+			</section>
+
+			<section class="footerLogo">
+			<h3 class="hidden">Logo</h3>
+
+				<img src="images/footer_logo.svg" alt="Logo">
+			</section>
+
+			<section class="footerLinks">
+			<h3>USEFUL LINKS</h3>
+
+			<ul>
+				<li><a href="#">Carolinian Canada</a></li>
+				<li><a href="#">Nature London</a></li>
+				<li><a href="#">Friends of the Thames</a></li>
+				<li><a href="#">Ontario Streams</a></li>
+				<li><a href="#">Trout Unlimited Canada</a></li>
+				<li><a href="#">Angling Sports </a></li>
+			</ul>
+
+			</section>
+			
+		</footer>
+	</div>
+
+<!-- END FOOTER -->
 
 	<script src="js/main.js"></script>
 </body>
