@@ -513,7 +513,7 @@ video
 
 .event h3
 {
-	font-size:23px;
+	font-size:20px;
 	color: #474747;
 	font-family: Myriad Pro, Arial, sans-serif;
 	margin:20px;
@@ -542,6 +542,7 @@ video
 	color: grey;
 	font-family: Myriad Pro, Arial, sans-serif;
 	line-height:23px;
+	height: 110px;
 }
 
 .eventButton
@@ -555,7 +556,7 @@ video
 	text-align: center;
 	font-family: Apple Symbols, Arial;
 	margin-left:25px;
-/*	margin-top:25px;*/
+	margin-top:30px;
 	margin-bottom:25px;
 	background-color: #2e7551;
 }
@@ -833,7 +834,7 @@ video
 	color: #aeaeae;
 	font-family: Myriad Pro ,Apple Symbols, Arial, sans-serif;		/*box-shadow: 0 1px 1px rgba(0,0,0,0.15) inset;*/
 	padding-top: 25px;
-	padding-left: 10px;
+	padding-left: 15px;
 }
 
 #submit
@@ -883,6 +884,7 @@ video
 .sponsorsImg img, .sponsorsImg2 img
 {
 	margin-bottom: 50px;
+	max-width: 245px;
 }
 
 .anglingLogo
@@ -946,7 +948,7 @@ video
 		width: 210px;
 	}
 
-	.aboutSection h2, .projectsCon h2, #eventPage h2, .contact h2 
+	.aboutSection h2, .projectsCon h2, #eventPage h2, .contact h2, .newsHeader, #gearCon h2
 	{
 		font-size: 30px;
 	}
@@ -980,6 +982,16 @@ video
 		font-family: Apple Symbols, Arial, sans-serif;
 		font-size: 27px;
 	}
+	
+	.contactInfo
+	{
+		font-size: 21px;
+	}
+	
+	.contactMeeting
+	{
+		font-size: 21px;
+	}
 }
 
  /* ========= 480px ======================*/
@@ -1002,7 +1014,7 @@ video
 		width: 230px;
 	}
 	
-	.aboutSection h2, .projectsCon h2, #eventPage h2, .contact h2 
+	.aboutSection h2, .projectsCon h2, #eventPage h2, .contact h2, .newsHeader, #gearCon h2
 	{
 		font-size: 30px;
 	}
@@ -1065,6 +1077,16 @@ video
 		font-family: Apple Symbols, Arial, sans-serif;
 		font-size: 27px;
 	}
+	
+	.contactInfo
+	{
+		font-size: 22px;
+	}
+	
+	.contactMeeting
+	{
+		font-size: 22px;
+	}
 }
 
 /* ========= 600px ====================*/
@@ -1090,7 +1112,7 @@ video
 		width: 250px;
 	}
 	
-	.aboutSection h2, .projectsCon h2, #eventPage h2, .contact h2 
+	.aboutSection h2, .projectsCon h2, #eventPage h2, .contact h2, .newsHeader, #gearCon h2
 	{
 		font-size: 35px;
 	}
@@ -1150,6 +1172,35 @@ video
 		font-family: Apple Symbols, Arial, sans-serif;
 		font-size: 30px;
 	}
+	
+	.contactInfo
+	{
+		font-size: 23px;
+	}
+	
+	.contactMeeting
+	{
+		font-size: 23px;
+	}
+	
+	.sponsors
+	{
+		display: flex;
+		justify-content: space-around;
+	}
+	
+	.sponsorsImg img, .sponsorsImg2 img
+	{
+		width: 80%;
+		margin-left: 12px;
+	}
+	
+	.anglingLogo
+	{
+		margin-top: 40px;
+		margin-left: 0;
+	}
+
 }
 
 /* ========= 800px =================== */
@@ -1170,7 +1221,7 @@ video
 		width: 300px;
 	}
 	
-	.aboutSection h2, .projectsCon h2, #eventPage h2, .contact h2 
+	.aboutSection h2, .projectsCon h2, #eventPage h2, .contact h2, .newsHeader, #gearCon h2 
 	{
 		font-size: 40px;
 		margin-bottom: 30px;
@@ -1283,13 +1334,66 @@ video
 		max-width: 240px;
 	}
 	
+	.event h3
+	{
+		height: 33px;
+	}
+	
+	#bigEventButton
+	{
+		font-size: 38px;
+	}
+	
 	.accordion {
-  border-bottom: solid 1.2px #00a651;
-  padding: 15px 40px;
-  margin-bottom: 25px;
-  font-size: 22px
-}
-}
+	  	border-bottom: solid 1.2px #00a651;
+	  	padding: 15px 40px;
+	  	margin-bottom: 25px;
+	  	font-size: 22px
+	}
+	
+	.contactInfo
+	{
+		font-size: 25px;
+		line-height: 35px;
+		letter-spacing: 1px;
+	}
+	
+	.contactMeeting
+	{
+		font-size: 24px;
+		line-height: 35px;
+		letter-spacing: 1px;
+	}
+	
+	.contact h3
+	{
+		font-size: 30px;
+	}
+
+	.inputCon1, .inputCon2
+	{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	
+	.inputCon2
+	{
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
+
+	#name, #email, #phone, #subject {
+    	width: 345px;
+    	height: 60px;
+	}
+	
+	#submit
+	{
+		font-size: 25px;
+	}
+	
+
 
 /*======= 900px ===========================  */
 
@@ -1314,7 +1418,6 @@ video
 
 /* ========= 1024px =================== */
 @media screen and (min-width: 1024px) {
-	
 	
 	#mainHeader
 	{
@@ -1392,7 +1495,7 @@ video
 		margin-top: 50px;
 	}
 	
-	.aboutSection h2, .projectsCon h2, #eventPage h2, .contact h2
+	.aboutSection h2, .projectsCon h2, #eventPage h2, .contact h2, .newsHeader, #gearCon h2
 	{
 		font-size: 60px;
 		margin-bottom: 30px;
@@ -1488,6 +1591,16 @@ video
 		margin: 0;
 		max-width: 320px;
 	}
+	
+	.event h3
+	{
+		height: 20px;
+	}
+	
+	.event p
+	{
+		height: 100px;
+	}
 
 	#firstEvent
 	{
@@ -1499,6 +1612,36 @@ video
 		margin-bottom: 80px;
 	}
 	
+	.contactInfo
+	{
+		font-size: 30px;
+	}
+	
+	.contactMeeting
+	{
+		font-size: 26px;
+	}
+	
+	.contact h3
+	{
+		font-size: 40px;
+	}
+
+	.sponsorsImg img, .sponsorsImg2 img
+	{
+		width: 95%;
+	}
+	
+	.anglingLogo
+	{
+		margin-top: 40px;
+		margin-left: 0;
+	}
+	
+		.sponsorsImg img:nth-child(2) , .sponsorsImg2 img:nth-child(2)
+	{
+		margin-bottom:  0px;
+	}
 }
 
 /* =================== 1325px ================== */
