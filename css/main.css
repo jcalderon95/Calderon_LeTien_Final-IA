@@ -819,7 +819,6 @@ video
 	margin-bottom: 25px;
 	height: 40px;
 	width: 100%;
-
 }
 
 #message
@@ -924,7 +923,7 @@ video
 
 .socialMedia a
 {
-	transition: transform .2s	
+	transition: transform .2s;	
 }
 
 .socialMedia a:hover
@@ -1489,6 +1488,7 @@ footer
 	{
 		font-size: 25px;
 	}
+}
 	
 
 
