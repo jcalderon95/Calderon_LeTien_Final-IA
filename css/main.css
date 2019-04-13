@@ -862,7 +862,7 @@ video
 
 .sponsors
 {
-	max-width: 905px;
+	max-width: 1000px;
 	margin: 0 auto;
 	padding-top: 55px;
 	padding-bottom: 45px;
@@ -924,6 +924,84 @@ video
 	transform: scale(1.15);
 }
 /* ============ END SOCIAL MEDIA =============*/
+
+/* ============ FOOTER ======================*/
+
+.footerCon
+{
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: #303030;
+}
+
+footer
+{
+	max-width: 1115px;
+	margin: 0 auto;
+	padding-left: 10px;
+}
+
+.footerNavCon
+{
+	height: 265px;
+	max-width: 250px;
+	margin: 0 auto;
+}
+
+.footerLinks
+{
+	height: 265px;
+	margin-bottom: 50px;
+	max-width: 250px;
+	margin: 0 auto;
+}
+
+.footerNavCon h3, .footerLinks h3
+{
+	font-size: 30px;
+	font-family: Apple Symbols, Arial, sans-serif;
+	text-align: center;
+	color: #717172;
+	border-bottom: solid 2px #717172;
+	padding-bottom: 5px;
+	margin-bottom: 15px;
+}
+
+.footerNav ul li , .footerLinks ul li
+{	
+	text-align: center;
+	margin-bottom: 15px;
+	font-family: Apple Symbols, Arial, sans-serif;
+	font-size: 20px;
+}
+
+.footerNav ul li a, .footerLinks ul li a
+{
+	color: #717172;
+	text-decoration: none;
+	font-weight: bold;
+	transition: all .3s ease-in;
+	font-size: 20px;
+
+}
+
+.footerNav ul li a:hover , .footerLinks ul li a:hover
+{
+	color: #00c15e;
+	border-bottom: solid 3px;
+	padding-bottom: 3px;
+}
+
+.footerLogo
+{
+	margin: 0 auto;
+	padding-top: 20px;
+	max-width: 185px;
+	margin-bottom: 50px;
+	padding-top: 20px;
+
+}
+/* ============ END FOOTER ==================*/
 
 
 
@@ -1200,6 +1278,17 @@ video
 		margin-top: 40px;
 		margin-left: 0;
 	}
+	
+	footer
+	{
+		display: flex;
+		flex-direction: row;
+	}
+	
+	.footerLogo
+  {
+	width: 100%;
+  }
 
 }
 
