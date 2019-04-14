@@ -43,8 +43,9 @@
 	function scrollLink(e){
 		// console.log("links fired");
 		e.preventDefault();
+		
 		let targetArea = e.currentTarget.id.slice(0,-3);
-		TweenLite.to(window, 1, {scrollTo:{y:`#${targetArea}`, offsetY:50, autoKill:false}});
+		TweenLite.to(window, 1, {scrollTo:{y:`#${targetArea}`, offsetY:60, autoKill:false}});
 	}
 
 
