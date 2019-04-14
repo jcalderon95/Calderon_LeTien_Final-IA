@@ -106,6 +106,18 @@ html {
 #burgerCon.slideToggle
 {
   display: block;
+  animation: navAnimation 1.7s 1 0s ease;
+}
+
+@keyframes navAnimation{
+    0%{
+        transform: translateY(8%);
+        opacity: 0;
+        }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+        }
 }
 
 #logo
