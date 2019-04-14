@@ -2,7 +2,7 @@
 
 ### Team Members: Jimmy Calderon - Tien Le
 
-## Thames River Anglers Assciation Wesite
+## Thames River Anglers Association Website
 
 ![TRAA Logo](images/logo.png)
 
@@ -11,9 +11,9 @@
 
 ## The Project
 
-### For this project we designed and developed a fully responsive website using HTML, CSS, JavaScript and the Greensock library to create an engagin user experience with animations and captivating visuals. We created a one page website with seven sections including a customend made image gallery for the merchandising section made with JavaScript.
+### For this project we designed and developed a fully responsive website using HTML, CSS, JavaScript and the Greensock library to create an engaging user experience with animations and captivating visuals. We created a one-page website with seven sections including a custom-made image gallery for the merchandising section made with JavaScript.
 
-### Moreover, for this project we designed and produced and informational video using Adobe Ilustrator and Adobe After Effects. 
+### Moreover, for this project we designed and produced an informational video using Adobe Illustrator and Adobe After Effects. 
 
 #### Sections:
  * HOME
@@ -23,3 +23,11 @@
  * NEWSLETTER 
  * GEAR 
  * CONTACT
+
+
+## Instructions
+
+* Download the file
+* Unzip the file
+* Open index.htlm on your favourite browser
+* Make sure you have JavaScript enable on your browser.
