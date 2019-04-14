@@ -280,6 +280,16 @@ video
 	margin-bottom: 35px;
 }
 
+.greenButton:hover
+{
+	background: #2e7551;
+	background: -moz-linear-gradient(top, #2e7551 1%, #35845b 50%, #2e7551 100%); 
+	background: -webkit-linear-gradient(top, #2e7551 1%,#35845b 50%,#2e7551 100%); 
+	background: linear-gradient(to bottom, #2e7551 1%,#35845b 50%,#2e7551 100%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2e7551', endColorstr='#2e7551',GradientType=0 );
+	color: #fff;
+}
+
 .greyButton
 {
 	display: block;
@@ -296,6 +306,16 @@ video
 	text-align: center;
 	font-family: Apple Symbols, Arial;
 	border-top: solid 1px #b1d1c1;
+}
+
+.greyButton:hover
+{
+	background: #e1eae6; 
+	background: -moz-linear-gradient(top, #e1eae6 0%, #c0d3c9 50%, #e1eae6 100%); 
+	background: -webkit-linear-gradient(top, #e1eae6 0%,#c0d3c9 50%,#e1eae6 100%); 
+	background: linear-gradient(to bottom, #e1eae6 0%,#c0d3c9 50%,#e1eae6 100%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e1eae6', endColorstr='#e1eae6',GradientType=0 );
+	color:#006633
 }
 /*============= END ABOUT =============*/
 
@@ -656,7 +676,13 @@ video
   color: #00a651;
   cursor: pointer;
   margin-bottom: 25px;
-  font-size: 20px
+  font-size: 22px
+}
+
+.accordion:hover
+{
+	transition: all .4s ease-in;
+	color: #497b69;	
 }
 
 .accordion:after 
@@ -677,11 +703,28 @@ video
   display: none;
 }
 
+.accordion-content a
+{
+  font-family: 'Montserrat',Andale Mono, Helvetica, sans-serif;
+  color: #717172;
+  margin-top: 10px;	
+  text-decoration: none;
+  display: block;
+  transition: all .3s ease-in;
+  font-size: 17px;	
+}
+
 .accordion-content p
 {
 	font-family: 'Montserrat',Andale Mono, Helvetica, sans-serif;
-  color: #717172;
-  margin-top: 10px;	
+  	color: black;
+  	margin-bottom: 25px;
+}
+
+
+.accordion-content a:hover
+{
+  	color: #050505;
 }
 
 .accordion-content.isOpen
