@@ -9,7 +9,7 @@
 [Thames River Anglers Association](https://www.anglers.org "TRAA Website")
 
 
-## The Project
+## About the Project
 
 ### For this project we designed and developed a fully responsive website using HTML, CSS, JavaScript and the Greensock library to create an engaging user experience with animations and captivating visuals. We created a one-page website with seven sections including a custom-made image gallery for the merchandising section made with JavaScript.
 
