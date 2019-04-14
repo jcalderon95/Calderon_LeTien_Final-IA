@@ -681,6 +681,10 @@ video
 /* ============= END NEWSLETTER ===============*/
 
 /* ============= GEAR SECTION =================*/
+#gearCon
+{
+	position: relative;
+}
 
 #gearCon h2
 {
@@ -689,17 +693,115 @@ video
 	font-family: 'Montserrat',Andale Mono, Helvetica, sans-serif;
 	color: #00a651;
 	text-align: center;
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 }
 
-#gearCon img
+.waterlineGear
 {
+	width: 200px;
 	display: block;
 	margin: 0 auto;
-	width: 200px;
-	margin-bottom: 80px;
+	margin-bottom: 60px;
 }
+
+#gearCon p
+{
+	margin: 0 auto;
+	font-size: 20px;
+	font-family: Apple Symbols, Arial, sans-serif;
+	color: #717172;
+	line-height: 30px;
+	text-align: center;
+	margin-bottom: 100px;
+	max-width: 995px;
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: center;
+}
+
+.gallery
+  {
+	max-width: 1365px;
+	margin: 0 auto;
+  }
+
+  .merch
+{
+	max-width: 310px;
+	margin: 0 auto;
+	max-height: 430px;
+	margin-bottom: 40px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.merch img
+{
+	margin-bottom: 30px;
+	transition: transform .2s
+}
+
+.merch img:hover
+{
+	filter: none;
+	transform: scale(1.01);
+	cursor: pointer;
+}
+
+.merch h4
+{
+	text-align: center;
+	color: #0a0b0a;
+	font-size: 20px;
+	font-family: 'Montserrat',Andale Mono, Helvetica, sans-serif;
+	margin-bottom: 24px;
+}
+
+.merch h5
+{
+	text-align: center;
+	font-family: Apple Symbols, Arial, sans-serif;
+	font-size: 20px;
+}
+
 /* ============= END GEAR ======================*/
+
+/* ============ LIGHTBOX ====================*/
+
+
+.lightbox{
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	background-color: rgba(0, 0, 0, 0.9);
+	height: 100%;
+	display: none;
+}
+
+.lightbox-on {
+	display: block;
+}
+
+.lightbox-close{
+	font-family: 'Montserrat',Andale Mono, Helvetica, sans-serif;
+	font-size: 40px;
+	position: absolute;
+	color: #fff;
+	right: 100px;
+	top: 500px;
+	cursor: pointer;
+}
+
+.lightboxImage{
+	max-width: 250px;
+	max-height: 250px;
+	margin-top: 600px;
+	border: thin solid #949393;
+}
+
+/* ============ END LIGHTBOX ================*/
 
 /* ============ CONTACT  ====================*/
 .contactCon
@@ -1012,6 +1114,7 @@ footer
 
 
 
+
 /* =========== MEDIA QUERIES ===============*/
 
 /* =========== 400 PX ======================*/
@@ -1054,7 +1157,11 @@ footer
 	{
 		margin-bottom: 0;
 	}
-
+  
+	.waterlineProjects
+	{
+		width: 190px;
+	}
 
 	.projectsDesc h3
 	{
@@ -1068,7 +1175,7 @@ footer
 		font-size: 27px;
 	}
 	
-	.contactInfo
+	.contactInfo, #gearCon p
 	{
 		font-size: 21px;
 	}
@@ -1163,7 +1270,7 @@ footer
 		font-size: 27px;
 	}
 	
-	.contactInfo
+	.contactInfo, #gearCon p
 	{
 		font-size: 22px;
 	}
@@ -1172,6 +1279,18 @@ footer
 	{
 		font-size: 22px;
 	}
+	
+	.lightbox-close{
+	right: 100px;
+	top: 500px;
+}
+
+.lightboxImage{
+	max-width: 400px;
+	max-height: 400px;
+	margin-top: 600px;
+}
+	
 }
 
 /* ========= 600px ====================*/
@@ -1258,7 +1377,7 @@ footer
 		font-size: 30px;
 	}
 	
-	.contactInfo
+	.contactInfo, #gearCon p
 	{
 		font-size: 23px;
 	}
@@ -1385,6 +1504,11 @@ footer
 		line-height: 38px;
 	}
 	
+	.waterlineProjects, .waterlineEvent
+	{
+		width: 240px;
+	}
+	
 	.projects
 	{
 		display: flex;
@@ -1430,6 +1554,7 @@ footer
 		max-width: 240px;
 	}
 	
+	
 	.event h3
 	{
 		height: 33px;
@@ -1440,14 +1565,15 @@ footer
 		font-size: 38px;
 	}
 	
-	.accordion {
+	.accordion 
+	{
 	  	border-bottom: solid 1.2px #00a651;
 	  	padding: 15px 40px;
 	  	margin-bottom: 25px;
 	  	font-size: 22px
 	}
 	
-	.contactInfo
+	.contactInfo, #gearCon p
 	{
 		font-size: 25px;
 		line-height: 35px;
@@ -1488,6 +1614,26 @@ footer
 	{
 		font-size: 25px;
 	}
+	
+	.gallery
+	{
+		display: flex;
+	}
+	
+	.lightbox-close{
+		right: 100px;
+		top: 50px;
+	}
+
+	.lightboxImage{
+		max-width: 500px;
+		max-height: 500px;
+		margin-top: 120px;
+	}
+
+	
+	
+	
 }
 	
 
@@ -1659,6 +1805,11 @@ footer
 		margin-bottom: 150px;
 	}
 	
+	.waterlineProjects, .waterlineEvent
+	{
+		width: 340px;
+	}
+	
 	.projectsDesc
 	{
 		max-width: 320px;
@@ -1709,7 +1860,7 @@ footer
 		margin-bottom: 80px;
 	}
 	
-	.contactInfo
+	.contactInfo, #gearCon p
 	{
 		font-size: 30px;
 	}
@@ -1738,6 +1889,22 @@ footer
 		.sponsorsImg img:nth-child(2) , .sponsorsImg2 img:nth-child(2)
 	{
 		margin-bottom:  0px;
+	}
+	
+	.gallery
+	{
+		margin-top: 130px;
+	}
+
+	.lightbox-close{
+		right: 120px;
+		top: 100px;
+	}
+
+	.lightboxImage{
+		max-width: 600px;
+		max-height: 600px;
+		margin-top: 150px;
 	}
 }
 
